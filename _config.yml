@@ -1,5 +1,5 @@
 name: Jomy's Blog
 markdown: kramdown
 permalink: /blog/:year/:month/:day/:title
-paginate: 1
+paginate:1
 paginate_path: "/blog/page:num/"
