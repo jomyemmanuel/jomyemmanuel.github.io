@@ -3,22 +3,22 @@ layout: default
 title: Jomy's Blog
 ---
 	<ul class="posts">
+		{% for post in paginator.posts %}
 	<div class="postcon">
 		<div class="post-heading">
 			<div class="post-title">
-				  {% for post in paginator.posts %}
-				    <li><h2>» <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
+				<h2>» <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 	    		</div>
 	    		<div class="post-date">
-	    			<span class="date">{{ post.date | date_to_string }}</span></li>
+	    			<span class="date">{{ post.date | date_to_string }}</span>
 	    		</div>	
 	    	</div>
 	   	<div class="post-content">
 			{{ post.content | strip_html | truncatewords:75}}<br>
 		        <a href="{{ post.url }}">Read more...</a><br><br>
-		  	{% endfor %}
-	  	</div>
+		</div>
 	  </div>
+	  {% endfor %}
 	</ul>
 	
 	<!-- Pagination links -->
