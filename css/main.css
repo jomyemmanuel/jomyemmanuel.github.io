@@ -45,3 +45,8 @@ ul.posts li {
 .pagination {
     text-align: center;
 }
+
+.date {
+    font-size: 10px;
+    color: red;
+}
