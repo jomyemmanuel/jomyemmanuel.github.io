@@ -57,3 +57,7 @@ h2 {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
+nav {
+    border-bottom: 1px solid #d5d5d5;
+}
