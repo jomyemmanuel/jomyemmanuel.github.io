@@ -2,7 +2,8 @@
 layout: default
 title: Jomy's Blog
 ---
-	<ul class="posts post">
+	<ul class="posts">
+	<div class="post">
 		<div class="post-heading">
 			<div class="post-title">
 				  {% for post in paginator.posts %}
@@ -17,6 +18,7 @@ title: Jomy's Blog
 		        <a href="{{ post.url }}">Read more...</a><br><br>
 		  	{% endfor %}
 	  	</div>
+	  </div>
 	</ul>
 	
 	<!-- Pagination links -->
