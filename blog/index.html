@@ -5,20 +5,18 @@ title: Jomy's Blog
 	<ul class="posts post">
 		<div class="post-heading">
 			<div class="post-title">
-
-	  {% for post in paginator.posts %}
-	    <li><h2>» <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2><br>
+				  {% for post in paginator.posts %}
+				    <li><h2>» <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2><br>
 	    		</div>
-	    	<div class="post-date">
-	    <span class="date">{{ post.date | date_to_string }}</span></li>
-	    	</div>	
-	    </div>
-	    	<div class="post-content">
-	    {{ post.content | strip_html | truncatewords:75}}<br>
-            <a href="{{ post.url }}">Read more...</a><br><br>
-	  {% endfor %}
+	    		<div class="post-date">
+	    			<span class="date">{{ post.date | date_to_string }}</span></li>
+	    		</div>	
+	    	</div>
+	   	<div class="post-content">
+			{{ post.content | strip_html | truncatewords:75}}<br>
+		        <a href="{{ post.url }}">Read more...</a><br><br>
+		  	{% endfor %}
 	  	</div>
-	  </div>
 	</ul>
 	
 	<!-- Pagination links -->
