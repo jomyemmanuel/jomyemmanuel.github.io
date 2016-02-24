@@ -17,7 +17,7 @@ title: Jomy's Blog
 	  {% else %}
 	    <span class="previous">Previous</span>
 	  {% endif %}
-	  <span class="page_number "><em></em>Page: {{ paginator.page }} of {{ paginator.total_pages }}</em></span>
+	  <span class="page_number "><em>Page: {{ paginator.page }} of {{ paginator.total_pages }}</em></span>
 	  {% if paginator.next_page %}
 	    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
 	  {% else %}
