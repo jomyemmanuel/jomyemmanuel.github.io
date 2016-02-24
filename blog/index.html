@@ -7,7 +7,7 @@ title: Jomy's Blog
 		<div class="post-heading">
 			<div class="post-title">
 				  {% for post in paginator.posts %}
-				    <li><h2>» <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2><br>
+				    <li><h2>» <a href="{{ post.url }}" title="{{ post.title }}">{{ post.title }}</a></h2>
 	    		</div>
 	    		<div class="post-date">
 	    			<span class="date">{{ post.date | date_to_string }}</span></li>
