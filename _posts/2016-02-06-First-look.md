@@ -1,7 +1,7 @@
 ---
 layout: post
-title: "My Blog's First Look"
+title: "Intro"
 date: 2016-02-06
 ---
 
-Well. Finally got around to putting this old website together. Neat thing about it - powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. It actually is a lot easier than I thought it was going to be.
+Well. Finally set up my blog. It is powered by [Jekyll](http://jekyllrb.com) and I can use Markdown to author my posts. View the source code [here](https://github.com/jomyemmanuel/jomyemmanuel.github.io)
