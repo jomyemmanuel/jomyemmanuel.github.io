@@ -18,6 +18,12 @@
     border: 3px solid #6699FF;
 }
 
+/*.social {
+    left:50%;
+    transform: translateX(-50%);
+    position: absolute;
+}*/
+
 .social a {
     display: -moz-inline-stack;
     display: inline-block;
@@ -67,6 +73,14 @@
 }
 .social a.linkedin:hover {
     border: 1px solid #003854
+}
+
+.social a.hackerrank {
+    background: url('https://cloud.githubusercontent.com/assets/8125643/14213163/21a022ce-f854-11e5-821d-e62b1434498d.png') center no-repeat #293335;
+    border: 1px solid #293335
+}
+.social a.hackerrank:hover {
+    border: 1px solid #293335
 }
 
 #logo-bot {
