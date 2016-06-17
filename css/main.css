@@ -27,7 +27,7 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.5em;
+    font-size: 1.2em;
     line-height: 1.4em;
     color: #333;
 }
@@ -46,7 +46,7 @@ ul.posts li {
 
 .date {
     font-size: 15px;
-    color: red;
+    color: #646D63;
 }
 
 h2 {
