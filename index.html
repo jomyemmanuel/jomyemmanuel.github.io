@@ -34,16 +34,16 @@
 
         <div class='col-md-12 navb'>
           <div class="col-md-3 elm" value="about">
-            <a href="#about">About </a>
+            <a href="#about" class="active yel">About </a>
           </div>
           <div class="col-md-3 elm" value="code">
-            <a href="#code">&lt;Code/&gt; </a>
+            <a href="#code" class="yel">&lt;Code/&gt; </a>
           </div>
           <div class="col-md-3 elm" value="blog">
-            <a href="#blog">Blog </a>
+            <a href="#blog" class="yel">Blog </a>
           </div>
           <div class="col-md-3 elm" value="contact">
-            <a href="#contact"> Contact </a>          
+            <a href="#contact" class="yel"> Contact </a>          
           </div>
         </div>
 
@@ -92,6 +92,8 @@
     $(".elm").click(function(){
       $('#about, #code, #blog, #contact').hide();
       $('#' + $(this).attr('value')).show();
+      $('.active').removeClass('active'); // remove the class from the currently selected
+        $(this).children().addClass('active');
     });
   });
   $(window).bind('load', function () {
