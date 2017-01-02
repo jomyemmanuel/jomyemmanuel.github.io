@@ -14,8 +14,8 @@ title: Jomy's Blog
 	    		</div>	
 	    	</div>
 	   	<div class="post-content">
-			{{ post.content | strip_html | truncatewords:75}}<br>
-		        <a href="{{ post.url }}">Read more...</a><br><br>
+			{{ post.content | strip_html | truncatewords:75}}<br><br>
+		        <a class="continue" href="{{ post.url }}">Continue Reading</a><br><br>
 		</div>
 	  </div>
 	  {% endfor %}
@@ -26,7 +26,7 @@ title: Jomy's Blog
 	  {% if paginator.previous_page %}
 	    <a href="{{ paginator.previous_page_path }}" class="previous">Previous</a>
 	  {% endif %}
-	  <span class="page_number "><em>Page: {{ paginator.page }} of {{ paginator.total_pages }}</em></span>
+	  <!-- <span class="page_number "><em>Page: {{ paginator.page }} of {{ paginator.total_pages }}</em></span> -->
 	  {% if paginator.next_page %}
 	    <a href="{{ paginator.next_page_path }}" class="next">Next</a>
 	  {% endif %}

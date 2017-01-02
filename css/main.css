@@ -1,8 +1,8 @@
 body {
     margin: 60px auto;
-    width: 70%;
+    width: 60%;
     font-family: Helvetica, Arial, sans-serif;
-    font-size: 16px;
+    font-size: 24px;
 }
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
@@ -17,7 +17,7 @@ nav ul li, footer ul li {
 }
 a {
     text-decoration: none;
-    color: #008000;
+    color: #000000;
 }
 a:hover {
     text-decoration: underline;
@@ -27,9 +27,10 @@ h1 {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
 }
 p {
-    font-size: 1.2em;
     line-height: 1.4em;
-    color: #333;
+}
+p a{
+    color: #424eff;
 }
 footer {
     border-top: 1px solid #d5d5d5;
@@ -45,12 +46,13 @@ ul.posts li {
 }
 
 .date {
-    font-size: 15px;
-    color: #646D63;
+    font-size: 20px;
+    color: #9a9a9a;
+    margin-top: 5px;
 }
 
 h2 {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
     margin-bottom: 20px;
 }
@@ -60,27 +62,48 @@ nav {
 }
 
 .postcon + .postcon {
-    margin-top: 15px;
+    margin-top: 100px;
 }
 
 .post-heading {
     position: relative;
-    border-bottom: 3px solid #666;
 }
 
 .post-title {
-    font-size: 24px;
+    font-size: 32px;
     font-weight: bold;
+    padding-bottom: 25px;
 }
 
 .post-date {
     position: absolute;
-    right: 0px;
+    left: 0px;
     bottom: 0px;
-    color: #999;
-
 }
 
 .post-content {
-    margin-top: 5px;
+    margin-top: 25px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #2f2f2f;
+}
+
+.post {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 20px;
+    color: #2f2f2f;
+    padding-bottom: 10px;
+}
+.outer {
+    font-size: 16px;
+    font-family: 'Nunito', sans-serif;
+}
+
+.continue {
+    font-size: 20px;
+    color: #9a9a9a;
+}
+
+.page_number, .next, .previous {
+    font-size: 16px;
 }
