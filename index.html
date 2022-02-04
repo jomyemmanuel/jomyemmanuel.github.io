@@ -110,6 +110,19 @@
     $('#code, #blog, #contact').hide();
   });
   </script>
+  <script>
+    var swa = {
+        pubToken: 'ad29326e-7849-4174-979e-ddb53d5622a0',
+        baseUrl: 'https://events.web-analytics.cfapps.us10.hana.ondemand.com/tracker/',
+        owner: null 
+        //set this to a function that returns the identifier of the tracked user
+    };
+    (function(){
+        var d=document, g=d.createElement('script'), s=d.getElementsByTagName('script')[0];
+        g.type='text/javascript'; g.defer=true; g.async=true; g.src=swa.baseUrl+'js/track.js';
+        s.parentNode.insertBefore(g,s);
+     })();
+</script>
 </body>
 
 </html>
